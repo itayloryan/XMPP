@@ -13,12 +13,20 @@
         android:layout_height="match_parent"
         android:layout_above="@+id/tab_layout"
         />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/tab_layout"
+        android:background="#e4e4e4" />
+
     <LinearLayout
         android:id="@id/tab_layout"
         android:orientation="horizontal"
         android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:layout_height="50dp">
+        android:layout_alignParentStart="true">
 
         <RelativeLayout
             android:id="@+id/tab_inbox"
@@ -42,6 +50,8 @@
                 android:text="Message"
                 android:textColor="@color/gray3"
                 android:layout_alignParentBottom="true"
+                android:layout_marginTop="-3dp"
+                android:layout_marginBottom="3dp"
                 android:layout_centerHorizontal="true"/>
 
             <TextView
@@ -52,6 +62,7 @@
                 android:gravity="center"
                 android:textColor="#FFF"
                 android:visibility="visible"
+                android:layout_marginTop="3dp"
                 android:layout_toRightOf="@id/tab_inbox_image"
                 android:background="@drawable/message_count_shape"/>
         </RelativeLayout>
@@ -109,9 +120,4 @@
         </RelativeLayout>
 
     </LinearLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_above="@id/tab_layout"
-        android:background="#e4e4e4" />
 </RelativeLayout>

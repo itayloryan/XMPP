@@ -33,6 +33,7 @@ dependencies {
     compile 'org.igniterealtime.smack:smack-tcp:4.1.4'
     compile 'org.greenrobot:eventbus:3.0.0'
     testCompile 'junit:junit:4.12'
+    compile project(path: ':library')
 }
 
 apt {
