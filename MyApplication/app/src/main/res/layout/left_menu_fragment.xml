@@ -4,6 +4,7 @@
                 android:layout_height="match_parent">
 
     <LinearLayout
+        android:id="@+id/menu_item1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -13,8 +14,67 @@
             android:src="@drawable/ic_tab_tool"/>
         
         <TextView
-            android:layout_width=""
-            android:layout_height=""/>
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="Test"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_item2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu_item1"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_tab_tool"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="Test"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_item3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu_item2"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_tab_tool"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="Test"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_item4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu_item3"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_tab_tool"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="Test"/>
     </LinearLayout>
 
 </RelativeLayout>
