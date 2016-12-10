@@ -1,10 +1,10 @@
-package com.tayloryan.old_driver;
+package com.tayloryan.old_driver.ui;
 
 import android.content.Intent;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.tayloryan.old_driver.ui.BaseActivity;
+import com.tayloryan.old_driver.R;
 import com.tayloryan.old_driver.utils.ToolBarConfig;
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Click;

@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\workspace\\MyDemoGit\\olddriver\\MyApplication\\library\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "outputFile": "F:\\AndroidStudioProject\\olddriver\\MyApplication\\library\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 1130
                 },
                 "from": {
-                    "file": "C:\\workspace\\MyDemoGit\\olddriver\\MyApplication\\library\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "F:\\AndroidStudioProject\\olddriver\\MyApplication\\library\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,

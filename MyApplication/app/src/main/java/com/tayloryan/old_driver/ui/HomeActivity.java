@@ -1,10 +1,11 @@
-package com.tayloryan.old_driver;
+package com.tayloryan.old_driver.ui;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentManager;
 
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
+import com.tayloryan.old_driver.R;
 import com.tayloryan.old_driver.ui.BaseActivity;
 import com.tayloryan.old_driver.ui.SlideMenuFragment;
 import com.tayloryan.old_driver.ui.SlideMenuFragment_;
