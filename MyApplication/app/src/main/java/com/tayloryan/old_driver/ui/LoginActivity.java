@@ -1,9 +1,12 @@
 package com.tayloryan.old_driver.ui;
 
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.ashokvarma.bottomnavigation.BottomNavigationBar;
+import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 import com.tayloryan.old_driver.R;
 import com.tayloryan.old_driver.utils.ToolBarConfig;
 import org.androidannotations.annotations.AfterViews;
@@ -20,10 +23,13 @@ public class LoginActivity extends BaseActivity {
     protected EditText et_password;
     @ViewById(R.id.btn_login)
     protected Button loginButton;
+    @ViewById(R.id.navigation_bar)
+    BottomNavigationBar navigationBar;
 
     @AfterViews
     protected void afterViews() {
         initialToolBar();
+        initialNavigationBar();
     }
 
     private void initialToolBar() {
@@ -32,6 +38,20 @@ public class LoginActivity extends BaseActivity {
                 .setLogo(R.drawable.ic_tab_contacts)
                 .setTitle(R.string.tool_bar_title)
                 .configuration();
+    }
+
+    private void initialNavigationBar() {
+        navigationBar
+                .setMode(BottomNavigationBar.MODE_SHIFTING)
+                .setBackgroundStyle(BottomNavigationBar.BACKGROUND_STYLE_RIPPLE)
+                .setBarBackgroundColor("#FFFFFF")
+                .setActiveColor("#fe9901")
+                .addItem(new BottomNavigationItem(R.drawable.ic_call_tab, "Call"))
+                .addItem(new BottomNavigationItem(R.drawable.ic_contacts_tab, "Contacts"))
+                .addItem(new BottomNavigationItem(R.drawable.ic_message_tab, "Message"))
+                .addItem(new BottomNavigationItem(R.drawable.ic_security_tab, "Security"))
+                .initialise();
+
     }
 
     @Click(R.id.btn_login)
