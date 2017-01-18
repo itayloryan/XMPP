@@ -44,8 +44,8 @@ public class LoginActivity extends BaseActivity {
         navigationBar
                 .setMode(BottomNavigationBar.MODE_SHIFTING)
                 .setBackgroundStyle(BottomNavigationBar.BACKGROUND_STYLE_RIPPLE)
-                .setBarBackgroundColor("#FFFFFF")
-                .setActiveColor("#fe9901")
+                .setBarBackgroundColor("#FE9901")
+                .setActiveColor("#FFFFFF")
                 .addItem(new BottomNavigationItem(R.drawable.ic_call_tab, "Call"))
                 .addItem(new BottomNavigationItem(R.drawable.ic_contacts_tab, "Contacts"))
                 .addItem(new BottomNavigationItem(R.drawable.ic_message_tab, "Message"))
